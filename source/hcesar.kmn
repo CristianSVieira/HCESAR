@@ -1,0 +1,367 @@
+﻿c hcesar generated from template at 2023-06-30 01:48:06
+c with name "HCESAR"
+store(&VERSION) '10.0'
+store(&NAME) 'HCESAR'
+store(&COPYRIGHT) '© Vilantino'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'windows macosx linux web'
+store(&BITMAP) 'hcesar.ico'
+store(&VISUALKEYBOARD) 'hcesar.kvks'
+
+begin Unicode > use(main)
+
+c posição das teclas em um teclado original.
+store (vogais) [K_U] [K_E] [K_F] [K_O] [K_J] [K_W]
+store(vogais_accento_agudo) "áéíóúç"
+store(vogais_accento_grave) "àèìòùç"
+
+group(main) using keys
+
+C ===============================
+C *******************************
+C ===============================
+
+C LISO ======================
+
+C L1 ========================
+
++ [K_BKQUOTE] > U+0027
++ [K_1] > '0'
++ [K_2] > '1'
++ [K_3] > '2'
++ [K_4] > '3'
++ [K_6] > '5'
++ [K_7] > '6'
++ [K_5] > '4'
++ [K_8] > '7'
++ [K_9] > '8'
++ [K_0] > '9'
++ [K_HYPHEN] > 'º'
++ [K_EQUAL] > '<'
+
+C L2 ========================
+
++ [K_Q] > 'h'
++ [K_W] > 'c'
++ [K_E] > 'e'
++ [K_R] > 's'
++ [K_T] > '´'
++ [K_Y] > '`'
++ [K_U] > 'a'
++ [K_I] > 'r'
++ [K_O] > 'o'
++ [K_P] > 'p'
++ [K_LBRKT] > 'x'
++ [K_RBRKT] > '['
+
+C L3 =========================
+
++ [K_A] > 'q'
++ [K_S] > 't'
++ [K_D] > 'd'
++ [K_F] > 'i'
++ [K_G] > ','
++ [K_H] > '.'
++ [K_J] > 'n'
++ [K_K] > 'u'
++ [K_L] > 'l'
++ [K_COLON] > 'm'
++ [K_QUOTE] > '\'
+
+C L4 ==========================
+
++ [K_oE2] > '-'
++ [K_Z] > 'y'
++ [K_X] > 'ç'
++ [K_C] > 'j'
++ [K_V] > 'b'
++ [K_B] > 'z'
++ [K_N] > 'f'
++ [K_M] > 'v'
++ [K_COMMA] > 'g'
++ [K_PERIOD] > 'k'
++ [K_SLASH] > 'w'
+
+C ===============================
+C *******************************
+C ===============================
+
+C CÂMBIO
+
+C L1 ========================
++ [SHIFT K_BKQUOTE] > U+0022
++ [SHIFT K_1] > '!'
++ [SHIFT K_2] > '@'
++ [SHIFT K_3] > '#'
++ [SHIFT K_4] > '$'
++ [SHIFT K_6] > '&'
++ [SHIFT K_7] > '/'
++ [SHIFT K_5] > '%'
++ [SHIFT K_8] > '('
++ [SHIFT K_9] > ')'
++ [SHIFT K_0] > '='
++ [SHIFT K_HYPHEN] > 'ª'
++ [SHIFT K_EQUAL] > '>'
+
+C L2 ========================
++ [SHIFT K_QUOTE] > '\'
++ [SHIFT K_COLON] > 'M'
++ [SHIFT K_L] > 'L'
++ [SHIFT K_K] > 'U'
++ [SHIFT K_J] > 'N'
++ [SHIFT K_SLASH] > 'W'
++ [SHIFT K_PERIOD] > 'K'
++ [SHIFT K_COMMA] > 'G'
++ [SHIFT K_M] > 'V'
++ [SHIFT K_N] > 'F'
++ [SHIFT K_H] > ':'
++ [SHIFT K_G] > ';'
++ [SHIFT K_F] > 'I'
++ [SHIFT K_D] > 'D'
++ [SHIFT K_S] > 'T'
++ [SHIFT K_B] > 'Z'
+C L3 ========================
++ [SHIFT K_V] > 'B'
++ [SHIFT K_C] > 'J'
++ [SHIFT K_X] > 'Ç'
++ [SHIFT K_Z] > 'Y'
++ [SHIFT K_oE2] > '-'
++ [SHIFT K_A] > 'Q'
++ [SHIFT K_BKSLASH] > ']'
++ [SHIFT K_LBRKT] > 'X'
++ [SHIFT K_RBRKT] > '*'
++ [SHIFT K_P] > 'P'
+C L4 ========================
++ [SHIFT K_O] > 'O'
++ [SHIFT K_I] > 'R'
++ [SHIFT K_U] > 'A'
++ [SHIFT K_Y] > '^'
++ [SHIFT K_T] > '~'
++ [SHIFT K_R] > 'S'
++ [SHIFT K_W] > 'C'
++ [SHIFT K_E] > 'E'
++ [SHIFT K_Q] > 'H'
+
+C ===============================
+C *******************************
+C ===============================
+
+C CONTROLE E CÂMBIO
+
+C L1
++ [SHIFT CTRL K_BKQUOTE] > '"'
++ [SHIFT CTRL K_0] > '='
++ [SHIFT CTRL K_1] > '!'
++ [SHIFT CTRL K_2] > '@'
++ [SHIFT CTRL K_3] > '#'
++ [SHIFT CTRL K_5] > '%'
++ [SHIFT CTRL K_6] > '&'
++ [SHIFT CTRL K_4] > '$'
++ [SHIFT CTRL K_7] > '/'
++ [SHIFT CTRL K_8] > '('
++ [SHIFT CTRL K_9] > ')'
++ [SHIFT CTRL K_HYPHEN] > 'ª'
++ [SHIFT CTRL K_EQUAL] > '>'
+
+C L2
++ [SHIFT CTRL K_Q] > 'H'
++ [SHIFT CTRL K_W] > 'C'
++ [SHIFT CTRL K_E] > 'E'
++ [SHIFT CTRL K_R] > 'S'
++ [SHIFT CTRL K_T] > '~'
++ [SHIFT CTRL K_Y] > '^'
++ [SHIFT CTRL K_I] > 'R'
++ [SHIFT CTRL K_U] > 'A'
++ [SHIFT CTRL K_O] > 'O'
++ [SHIFT CTRL K_P] > 'P'
++ [SHIFT CTRL K_LBRKT] > 'X'
++ [SHIFT CTRL K_RBRKT] > '*'
++ [SHIFT CTRL K_BKSLASH] > ']'
+
+C L3
++ [SHIFT CTRL K_A] > 'Q'
++ [SHIFT CTRL K_S] > 'T'
++ [SHIFT CTRL K_D] > 'D'
++ [SHIFT CTRL K_F] > 'I'
++ [SHIFT CTRL K_G] > ';'
++ [SHIFT CTRL K_H] > ':'
++ [SHIFT CTRL K_J] > 'N'
++ [SHIFT CTRL K_K] > 'U'
++ [SHIFT CTRL K_L] > 'L'
++ [SHIFT CTRL K_COLON] > 'M'
++ [SHIFT CTRL K_QUOTE] > '|`'
+
+C L4
++ [SHIFT CTRL K_oE2] > '_'
++ [SHIFT CTRL K_PERIOD] > 'K'
++ [SHIFT CTRL K_COMMA] > 'G'
++ [SHIFT CTRL K_M] > 'V'
++ [SHIFT CTRL K_N] > 'F'
++ [SHIFT CTRL K_B] > 'Z'
++ [SHIFT CTRL K_V] > 'B'
++ [SHIFT CTRL K_C] > 'J'
++ [SHIFT CTRL K_X] > 'Ç'
++ [SHIFT CTRL K_Z] > 'Y'
++ [SHIFT CTRL K_SLASH] > 'W'
+
+C ===============================
+C *******************************
+C ===============================
+
+C ALTERNÂNCIA
+
++ [ALT K_HYPHEN] > 'º'
++ [ALT K_0] > '9'
++ [ALT K_9] > '8'
++ [ALT K_8] > '7'
++ [ALT K_7] > '6'
++ [ALT K_6] > '5'
++ [ALT K_5] > '4'
++ [ALT K_4] > '3'
++ [ALT K_3] > '2'
++ [ALT K_2] > '1'
++ [ALT K_1] > '0'
++ [ALT K_BKQUOTE] > U+0027
++ [ALT K_EQUAL] > '<'
++ [ALT K_QUOTE] > '\'
++ [ALT K_BKSLASH] > '['
++ [ALT K_RBRKT] > '+'
++ [ALT K_LBRKT] > 'x'
++ [ALT K_P] > 'p'
++ [ALT K_O] > 'o'
++ [ALT K_I] > 'r'
++ [ALT K_U] > 'a'
++ [ALT K_COLON] > 'm'
++ [ALT K_L] > 'l'
++ [ALT K_K] > 'u'
++ [ALT K_J] > 'n'
++ [ALT K_SLASH] > 'w'
++ [ALT K_PERIOD] > 'k'
++ [ALT K_COMMA] > 'g'
++ [ALT K_M] > 'v'
++ [ALT K_N] > 'f'
++ [ALT K_B] > 'z'
++ [ALT K_H] > '.'
++ [ALT K_G] > ','
++ [ALT K_Y] > '`'
++ [ALT K_T] > '´'
++ [ALT K_V] > 'b'
++ [ALT K_C] > 'j'
++ [ALT K_X] > 'ç'
++ [ALT K_Z] > 'y'
++ [ALT K_oE2] > '-'
++ [ALT K_F] > 'i'
++ [ALT K_D] > 'd'
++ [ALT K_S] > 't'
++ [ALT K_A] > 'q'
++ [ALT K_R] > 's'
++ [ALT K_E] > 'e'
++ [ALT K_W] > 'c'
++ [ALT K_Q] > 'h'
+
+C ===============================
+C *******************************
+C ===============================
+
+C CONTROLE E ALTERNÂNCIA
+
++ [CTRL ALT K_oE2] > '―'
++ [CTRL ALT K_EQUAL] > '»'
++ [CTRL ALT K_HYPHEN] > '«'
++ [CTRL ALT K_0] > '}'
++ [CTRL ALT K_9] > ']'
++ [CTRL ALT K_8] > '['
++ [CTRL ALT K_7] > '{'
++ [CTRL ALT K_6] > '¬'
++ [CTRL ALT K_5] > '¢'
++ [CTRL ALT K_4] > '£'
++ [CTRL ALT K_3] > '§'
++ [CTRL ALT K_2] > '@'
++ [CTRL ALT K_1] > '¹'
++ [CTRL ALT K_LBRKT] > '×'
++ [CTRL ALT K_P] > 'þ'
++ [CTRL ALT K_O] > 'ø'
++ [CTRL ALT K_I] > '®'
++ [CTRL ALT K_U] > 'æ'
++ [CTRL ALT K_G] > '¨'
++ [CTRL ALT K_T] > '°'
++ [CTRL ALT K_Y] > '•'
++ [CTRL ALT K_L] > 'ł'
++ [CTRL ALT K_K] > 'µ'
++ [CTRL ALT K_J] > 'ŋ'
++ [CTRL ALT K_H] > 'œ'
++ [CTRL ALT K_SLASH] > 'ŭ'
++ [CTRL ALT K_PERIOD] > '¤'
++ [CTRL ALT K_COMMA] > '”'
++ [CTRL ALT K_M] > '“'
++ [CTRL ALT K_N] > '„'
++ [CTRL ALT K_B] > '„'
++ [CTRL ALT K_C] > 'ʒ'
++ [CTRL ALT K_Z] > '¥'
++ [CTRL ALT K_F] > 'ı'
++ [CTRL ALT K_D] > 'ð'
++ [CTRL ALT K_S] > '™'
++ [CTRL ALT K_A] > 'ə'
++ [CTRL ALT K_R] > 'ß'
++ [CTRL ALT K_E] > '€'
++ [CTRL ALT K_W] > '©'
++ [CTRL ALT K_Q] > '¶'
+
+C ===============================
+C *******************************
+C ===============================
+
+C CONTROLE
+
++ [CTRL K_BKQUOTE] > U+0027
++ [CTRL K_EQUAL] > '<'
++ [CTRL K_HYPHEN] > 'º'
++ [CTRL K_0] > '9'
++ [CTRL K_9] > '8'
++ [CTRL K_8] > '7'
++ [CTRL K_7] > '6'
++ [CTRL K_6] > '5'
++ [CTRL K_5] > '4'
++ [CTRL K_4] > '3'
++ [CTRL K_3] > '2'
++ [CTRL K_2] > '1'
++ [CTRL K_1] > '0'
++ [CTRL K_BKSLASH] > '['
++ [CTRL K_RBRKT] > '+'
++ [CTRL K_LBRKT] > 'x'
++ [CTRL K_P] > 'p'
++ [CTRL K_O] > 'o'
++ [CTRL K_I] > 'r'
++ [CTRL K_U] > 'a'
++ [CTRL K_QUOTE] > '\'
++ [CTRL K_COLON] > 'm'
++ [CTRL K_L] > 'l'
++ [CTRL K_K] > 'u'
++ [CTRL K_J] > 'n'
++ [CTRL K_SLASH] > 'w'
++ [CTRL K_PERIOD] > 'k'
++ [CTRL K_COMMA] > 'g'
++ [CTRL K_M] > 'v'
++ [CTRL K_N] > 'f'
++ [CTRL K_B] > 'z'
++ [CTRL K_H] > '.'
++ [CTRL K_G] > ','
++ [CTRL K_V] > 'b'
++ [CTRL K_C] > 'j'
++ [CTRL K_X] > 'ç'
++ [CTRL K_Z] > 'y'
++ [CTRL K_oE2] > '-'
++ [CTRL K_F] > 'i'
++ [CTRL K_S] > 't'
++ [CTRL K_A] > 'q'
++ [CTRL K_D] > 'd'
++ [CTRL K_Y] > '`'
++ [CTRL K_T] > '´'
++ [CTRL K_R] > 's'
++ [CTRL K_E] > 'e'
++ [CTRL K_W] > 'c'
++ [CTRL K_Q] > 'h'
+
+
+"´" + any(vogais) > index(vogais_accento_agudo,2)
+"`" + any(vogais) > index(vogais_accento_grave,2)
